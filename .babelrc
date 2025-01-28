@@ -1,0 +1,21 @@
+{
+  "plugins": [
+    "@parcel/babel-plugin-transform-runtime",
+    ["@babel/plugin-transform-react-jsx", {
+      "pragma": "h",
+      "pragmaFrag": "Fragment"
+    }]
+  ],
+  "env": {
+    "production": {
+      "plugins": [
+        "transform-remove-console",
+        "@parcel/babel-plugin-transform-runtime",
+        ["@babel/plugin-transform-react-jsx", {
+          "pragma": "h",
+          "pragmaFrag": "Fragment"
+        }]
+      ]
+    }
+  }
+}
